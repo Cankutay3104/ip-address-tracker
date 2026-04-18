@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontendMentor Solution](https://www.frontendmentor.io/solutions/ip-address-tracker-0ZF85SUuwe)
+- Live Site URL: [GitHub Pages](https://cankutay3104.github.io/ip-address-tracker/)
 
 ## My process
 
