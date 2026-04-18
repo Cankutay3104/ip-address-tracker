@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" />
+
+        <link rel="stylesheet" href="leaflet/dist/leaflet.css" />
+
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Frontend Mentor | IP Address Tracker</title>
+    </head>
+    <body>
+        <header class="hero">
+            <h1 class="hero__title">IP Address Tracker</h1>
+
+            <form class="search-form" id="ip-form" autocomplete="off">
+                <input
+                    type="text"
+                    id="ip-input"
+                    class="search-form__input"
+                    placeholder="Search for any IP address or domain"
+                    aria-label="Search for IP address or domain"
+                />
+                <button type="submit" class="search-form__btn" aria-label="Search">
+                    <img src="./images/icon-arrow.svg" alt="" />
+                </button>
+            </form>
+
+            <section class="info-box" aria-live="polite">
+                <div class="info-box__item">
+                    <span class="info-box__label">IP Address</span>
+                    <p class="info-box__value" id="ip-display">--</p>
+                </div>
+
+                <div class="info-box__item">
+                    <span class="info-box__label">Location</span>
+                    <p class="info-box__value" id="location-display">--</p>
+                </div>
+
+                <div class="info-box__item">
+                    <span class="info-box__label">Timezone</span>
+                    <p class="info-box__value"><span id="timezone-display">--</span></p>
+                </div>
+
+                <div class="info-box__item">
+                    <span class="info-box__label">ISP</span>
+                    <p class="info-box__value" id="isp-display">--</p>
+                </div>
+            </section>
+        </header>
+
+        <main id="map" class="map-container"></main>
+        <script src="leaflet/dist/leaflet.js"></script>
+        <script src="app.js" type="module"></script>
+    </body>
+</html>
